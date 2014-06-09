@@ -1,0 +1,20 @@
+TablestoGDB Tool.
+
+This is python Graphical User Interface Script to import .csv, .dbf, .xls, and xlsx into a file geodatabase for use with ArcGIS products.
+Instructions.
+1.	Simply run the script using your preferred method. 
+2.	Click the button to select a directory.  Select the topmost (parent) folder.
+3.	The database name will be whatever is typed in the white box. ImportedTables is the default.
+4.	Click Import and the script will go through the selected folder and all subfolders looking for any .xls, .xlsx, .csv, and .dbf files and place them as tables inside a specified GDB in a database folder.
+Notes.
+1.	No pre script tasks to complete. Script creates a folder named Database inside the selected parent folder and creates a file geodatabase for you.
+2.	If you are new to python scripting I suggest downloading  Pyscripter to run the script.  Simply install then open the TablestoGDB.py file with Pyscripter and press the green play button at the top. The script will walk you through the rest of the steps. 
+3.	Requires arcpy module a component of many ArcGIS products. Meaning one of these products has to be installed on the system.
+
+Feel free to send any and all bug reports via the email below.
+Thanks and enjoy!
+Created by: 
+Sean Hirschi
+shirschi@utah.gov
+GIS Analyst
+Utah State Division of Forestry, Fire, and State Lands.   
