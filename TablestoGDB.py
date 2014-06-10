@@ -1,3 +1,8 @@
+# Author: Sean Hirschi
+#         Gis Analyst
+#         Utah State Division of Forestry, Fire, and State Lands.
+#        Created using the Tkinter GUI toolkit and Python 2.7
+
 #!/usr/bin/python
 # -*- coding: iso-8859-1 -*-
 
@@ -33,6 +38,8 @@ class simpleapp_tk(Tkinter.Tk):
         self.gdb = "ImportedTables.gdb"
         self.GDBlabel = Tkinter.Label(self, text="Type the name for your geodatabase?", font=('Times', 9, 'bold'))
         self.GDBlabel.grid(column=0, row=4, padx=8, pady=12, sticky='w')
+        self.thanks = Tkinter.Label(self, text="This tool brought to you by the \n Utah Division of Forestry,\n Fire, and State Lands.", font=('Times', 8), fg='light green', bg='black')
+        self.thanks.grid(column=2,row=1)
         # Text entry box allowing the user to change the name of the geodatabase from the default of importedtables.gdb.
         # When the user clicks the import button it will record whatever text is in the box for the geodatabase
         # name and add.gdb if ext is not already present.
